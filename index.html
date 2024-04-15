@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <headi><h1>Calculator</h1></head>
+    <div class="Main">
+        <form>
+            <div>
+                <input type="text" id="display" disabled>
+            </div>
+            <div>
+                <input type="button" value="AC" class="keys grey" onclick="toScreen('C')">
+                <input type="button" value="%" class="keys grey" onclick="toScreen('%')">
+                <button type="button" class="keys keys-img grey" onclick="backSpace()"><img
+                        src="https://cdn.imgbin.com/1/15/21/imgbin-backspace-computer-icons-arrow-arrow-zvsw8GEzZ86GqP1gVLFR5VyEV.jpg" width="12px" height="12px"></button>
+                <button type="button" class="keys keys-img grey" onclick="toScreen('/')"><img src="https://cdn.pixabay.com/photo/2017/09/05/15/52/divide-2718203_1280.png"
+                        width="12px" height="12px"></button>
+
+            </div>
+            <div>
+                <input type="button" value="7" class="keys" onclick="toScreen('7')">
+                <input type="button" value="8" class="keys" onclick="toScreen('8')">
+                <input type="button" value="9" class="keys" onclick="toScreen('9')">
+                <button type="button" class="keys keys-img grey" onclick="toScreen('*')"><img src="https://cdn.pixabay.com/photo/2014/04/02/10/17/multiply-303378_1280.png"
+                        width="12px" height="12px"></button>
+            </div>
+            <div>
+                <input type="button" value="4" class="keys" onclick="toScreen('4')">
+                <input type="button" value="5" class="keys" onclick="toScreen('5')">
+                <input type="button" value="6" class="keys" onclick="toScreen('6')">
+                <input type="button" value="-" class="keys grey" onclick="toScreen('-')">
+            </div>
+            <div>
+                <input type="button" value="1" class="keys" onclick="toScreen('1')">
+                <input type="button" value="2" class="keys" onclick="toScreen('2')">
+                <input type="button" value="3" class="keys" onclick="toScreen('3')">
+                <input type="button" value="+" class="keys grey" onclick="toScreen('+')">
+            </div>
+            <div>
+                <input type="button" value="00" class="keys" onclick="toScreen('00')">
+                <input type="button" value="0" class="keys" onclick="toScreen('0')">
+                <input type="button" value="." class="keys" onclick="toScreen('.')">
+                <input type="button" value="=" class="keys equals" onclick="answer()">
+            </div>
+       
+        </form>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
